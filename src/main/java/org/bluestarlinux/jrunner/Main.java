@@ -44,6 +44,11 @@ public class Main
                 
         do
         {
+            mainWindow.getCloseButton().setVisible(true);
+            mainWindow.getCloseButton().setEnabled(false);
+            mainWindow.getRetryButton().setVisible(false);
+            mainWindow.getRetryButton().setEnabled(false);
+
             boolean returnVal = execRunner.execCommands();
 
             // System.out.println("execRunner returns: " + returnVal);
